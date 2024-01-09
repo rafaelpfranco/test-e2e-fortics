@@ -3,11 +3,10 @@
         "module": "commonjs",
         "target": "ES5",
         "strict": true,
-        "baseUrl": "https://www.saucedemo.com/v1/index.html",
         "types": ["cypress"],
         "resolveJsonModule": true
     }, 
-    "include": ["cypress/**/*.ts"],
+    "include": ["cypress/**/*.ts", "src"],
     "exclude": [
         "node_modules"
     ]

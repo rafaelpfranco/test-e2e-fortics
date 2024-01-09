@@ -13,7 +13,7 @@ Cenario: Login Valido
     E ele acessa a pagina de Login
     E ele preenche suas credenciais válidas
     Quando ele aciona a opção para logar
-    Então ele deve ser redirecionado para a pagina inicial de usuario logado
+    Então ele deve ser redirecionado para a pagina de produtos
 
 Cenario: Login com usuário bloqueado
     E ele acessa a pagina de Login
