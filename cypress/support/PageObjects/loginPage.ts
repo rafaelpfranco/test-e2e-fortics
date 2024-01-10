@@ -12,6 +12,11 @@ class LoginPage {
     clickLoginButton() {
         cy.get('#login-button').click();
     }
+
+    //================================ Error ========================================//
+    verifyErrorMessage() {
+        return cy.get('[data-test="error"]');
+    }
 }
 
 export default new LoginPage()

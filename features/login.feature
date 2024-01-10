@@ -9,7 +9,7 @@ Funcionalidade: Login
 Contexto:  
     Dado que "User" possui uma conta no sistema
 
-Cenario: Login Valido
+Cenario: Login Válido
     E ele acessa a pagina de Login
     E ele preenche suas credenciais válidas
     Quando ele aciona a opção para logar
@@ -20,6 +20,12 @@ Cenario: Login com usuário bloqueado
     E ele preenche suas credenciais válidas
     Quando ele aciona a opção para logar
     Então uma mensagem de aviso que o usuário está bloqueado deve ser exibida
+    
+Cenario: Login com username incorreto
+    E ele acessa a pagina de Login
+    E ele preenche suas credenciais com CPF não cadastrado
+    Quando ele aciona a opção para logar
+    Então uma mensagem de aviso de usuário ou senha incorreta deve ser exibida
 
 Cenário: Login com senha incorreta
     E ele acessa a pagina de Login
@@ -27,13 +33,12 @@ Cenário: Login com senha incorreta
     Quando ele aciona a opção para logar
     Então uma mensagem de aviso de usuário ou senha incorreta deve ser exibida
 
-Cenario: Login com campos vazios
+Cenario: Login com username vazio
     E ele acessa a pagina de Login
     Quando ele aciona a opção para logar
-    Então uma mensagem de aviso de campos vazios deve ser exibida
+    Então uma mensagem de aviso de campo vazio deve ser exibida
 
-Cenario: Login com username incorreto
+Cenario: Login com senha vazia
     E ele acessa a pagina de Login
-    E ele preenche suas credenciais com CPF não cadastrado
     Quando ele aciona a opção para logar
-    Então uma mensagem de aviso de usuário ou senha incorreta deve ser exibida
+    Então uma mensagem de aviso de campo vazio deve ser exibida
