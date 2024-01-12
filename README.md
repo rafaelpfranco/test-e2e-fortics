@@ -27,6 +27,9 @@ Para visualizar os testes via executavel do cypress, utilize o comando:
 ## Padrões
 
  ###  Organização de pastas 
- - **fixtures** *(json com os dados utilizados)*
- - **integration** *(scripts de teste)*
- - **pageObjects** *(Ações de interação com a pagina web)*
+ 
+ - **e2e/fixtures** *(json com os dados utilizados)*
+ - **2e2/integration** *(scripts de teste)*
+ - **support/pageObjects** *(Ações de interação com a pagina web)*
+ - **reports/mocha** *(Relatório do testes executados)*
+ - **features** *(Casos de testes)*
