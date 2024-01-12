@@ -9,7 +9,7 @@ Funcionalidade: Login
 Contexto:  
     Dado que "User" possui uma conta no sistema
 
-Cenario: Login Válido
+Cenario: Login - Happy Day
     E ele acessa a pagina de Login
     E ele preenche suas credenciais válidas
     Quando ele aciona a opção para logar

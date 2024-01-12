@@ -5,6 +5,14 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: "https://www.saucedemo.com/v1" // Insira a base URL desejada aqui
+    baseUrl: "https://www.saucedemo.com/v1",
+    reporter: 'mochawesome',
+    reporterOptions: {
+      reportDir: 'cypress/reports/mocha',
+      quiet: true,
+      overwrite: false,
+      html: true,
+      json: true
+    }
   },
 });
